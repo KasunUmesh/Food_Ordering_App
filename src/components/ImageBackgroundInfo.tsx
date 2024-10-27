@@ -107,35 +107,6 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
                   {special_ingredient}
                 </Text>
               </View>
-              <View style={styles.ItemPropertiesContainer}>
-                <View style={styles.ProperFirst}>
-                  <CustomIcon
-                    name={type == 'Bean' ? 'bean' : 'beans'}
-                    size={type == 'Bean' ? FONTSIZE.size_18 : FONTSIZE.size_24}
-                    color={COLORS.primaryOrangeHex}
-                  />
-                  <Text
-                    style={[
-                      styles.PropertyTextFirst,
-                      {
-                        marginTop:
-                          type == 'Bean'
-                            ? SPACING.space_4 + SPACING.space_2
-                            : 0,
-                      },
-                    ]}>
-                    {type}
-                  </Text>
-                </View>
-                <View style={styles.ProperFirst}>
-                  <CustomIcon
-                    name={type == 'Bean' ? 'location' : 'drop'}
-                    size={FONTSIZE.size_16}
-                    color={COLORS.primaryOrangeHex}
-                  />
-                  <Text style={styles.PropertyTextLast}>{ingredients}</Text>
-                </View>
-              </View>
             </View>
             <View style={styles.InfoContainerRow}>
               <View style={styles.RatingContainer}>

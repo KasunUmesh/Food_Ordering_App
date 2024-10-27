@@ -134,7 +134,7 @@ const HomeScreen = ({navigation}: any) => {
         <HeaderBar />
 
         <Text style={styles.ScreenTitle}>
-          Find the best{'\n'}coffee for you
+          Find the best{'\n'}food for you
         </Text>
 
         {/* Search Input */}
@@ -156,7 +156,7 @@ const HomeScreen = ({navigation}: any) => {
             />
           </TouchableOpacity>
           <TextInput
-            placeholder="Find Your Coffee..."
+            placeholder="Find Your Food..."
             value={searchText}
             onChangeText={text => {
               setSearchText(text);
@@ -230,7 +230,7 @@ const HomeScreen = ({navigation}: any) => {
           horizontal
           ListEmptyComponent={
             <View style={styles.EmptyListContainer}>
-              <Text style={styles.CategoryText}>No Coffee Available</Text>
+              <Text style={styles.CategoryText}>No Food Available</Text>
             </View>
           }
           showsHorizontalScrollIndicator={false}
